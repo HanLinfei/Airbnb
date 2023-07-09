@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 const FooterWrapper = styled.div`
   border-top: 1px solid #eee;
+  margin-top: 48px;
   .content {
     width: 1100px;
     margin: 0 auto;
-    padding: 48px 0;
+    padding: 30px 0;
     .list-column {
       display: flex;
       justify-content: space-between;

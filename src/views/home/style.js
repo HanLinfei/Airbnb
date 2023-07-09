@@ -5,6 +5,7 @@ const HomeWrapper = styled.div`
     width: 1100px;
     margin: 0 auto;
     padding-top: 30px;
+    box-sizing: border-box;
   }
 `;
 

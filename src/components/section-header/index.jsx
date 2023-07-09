@@ -5,7 +5,7 @@ const SectionHeader = memo((props) => {
   const { title, subtitle } = props;
   return (
     <SectionHeaderWrapper>
-      <div className="title">{title}</div>
+      {title && <div className="title">{title}</div>}
       {subtitle && <div className="subtitle">{subtitle}</div>}
     </SectionHeaderWrapper>
   );
