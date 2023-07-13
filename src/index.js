@@ -12,15 +12,15 @@ import "@/assets/css/index.less";
 import App from "@/App";
 
 ReactDom.createRoot(document.querySelector("#root")).render(
-  <Suspense fallback="loading">
-    <HashRouter>
-      <Provider store={store}>
+  <Provider store={store}>
+    <Suspense fallback="loading">
+      <HashRouter>
         <ThemeProvider theme={styleTheme}>
           <MaterialThemeProvider theme={materialTheme}>
             <App />
           </MaterialThemeProvider>
         </ThemeProvider>
-      </Provider>
-    </HashRouter>
-  </Suspense>
+      </HashRouter>
+    </Suspense>
+  </Provider>
 );

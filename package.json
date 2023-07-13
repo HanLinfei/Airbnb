@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@mui/lab": "latest",
+    "@mui/material": "latest",
+    "@mui/styled-engine-sc": "latest",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -15,11 +18,10 @@
     "react-redux": "^8.1.1",
     "react-router-dom": "^6.14.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "@mui/material": "latest",
-    "@mui/lab": "latest",
-    "@mui/styled-engine-sc": "latest",
-    "styled-components": "latest"
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "latest",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "craco start",

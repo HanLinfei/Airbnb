@@ -4,6 +4,7 @@ export const RightWrapper = styled.div`
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  z-index: 666;
   .btns {
     display: flex;
     align-items: center;
@@ -54,9 +55,9 @@ export const RightWrapper = styled.div`
       }
       .top {
         padding: 10px 0;
+        padding-bottom: 0;
       }
       .bottom {
-        padding: 10px 0;
         div {
           height: 40px;
         }

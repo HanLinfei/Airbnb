@@ -17,10 +17,13 @@ import HomeSectionV1 from "./c-cpns/home-section-v1";
 import HomeSectionV2 from "./c-cpns/home-section-v2";
 import { isEmptyObject } from "@/utils/isEmptyObject";
 import HomeSectionLongfor from "./c-cpns/home-section-longfor";
+import AppHeader from "@/components/app-header";
+import { changeHeaderConfigAction } from "@/store/modules/main";
 
 const Home = memo(() => {
   const dispatch = useDispatch();
   useEffect(() => {
+    dispatch(changeHeaderConfigAction({ isFixed: true }));
     // 获取房间列表数据
     dispatch(fetchHomeDataGoodPriceAction());
     dispatch(fetchHomeDataHighScoreAction());
@@ -47,6 +50,7 @@ const Home = memo(() => {
   }, shallowEqual);
   return (
     <HomeWrapper>
+      <AppHeader />
       <HomeBanner />
       <div className="content">
         {isEmptyObject(goodDiscountInfo) && (

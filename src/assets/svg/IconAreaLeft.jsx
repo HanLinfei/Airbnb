@@ -1,7 +1,8 @@
 import cssStringToObject from "@/utils/cssStringToCssObject";
 import React, { memo } from "react";
 
-const IconAreaLeft = memo(() => {
+const IconAreaLeft = memo((props) => {
+  const { width = 12, height = 12 } = props;
   return (
     <svg
       viewBox="0 0 18 18"
@@ -10,7 +11,7 @@ const IconAreaLeft = memo(() => {
       aria-label="previous"
       focusable="false"
       style={cssStringToObject(
-        "height: 12px; width: 12px; display: block; fill: currentcolor;"
+        `height: ${height}px; width: ${width}px; display: block; fill: currentcolor;`
       )}>
       <path
         d="m13.7 16.29a1 1 0 1 1 -1.42 1.41l-8-8a1 1 0 0 1 0-1.41l8-8a1 1 0 1 1 1.42 1.41l-7.29 7.29z"
